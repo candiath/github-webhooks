@@ -6,5 +6,7 @@ import express from 'express';
 
 
 function main() {
+
   console.log('Starting the application...');
+  const app = express();
 }
