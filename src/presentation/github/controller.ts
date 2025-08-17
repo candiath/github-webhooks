@@ -28,8 +28,7 @@ export class GitHubController {
       // break;
 
       default:
-        // message = `Unknown event ${githubEvent}`;
-        message = this.gitHubService.default( payload );
+        message = `Unknown event ${githubEvent}`;
         
     }
     
