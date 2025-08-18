@@ -1,25 +1,21 @@
 {
   "name": "github-webhooks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Serverless GitHub webhooks to Discord using Netlify Functions",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node-dev --respawn --clear src/app.ts",
-    "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/app.js"
+    "dev": "netlify dev",
+    "build": "netlify build",
+    "deploy": "netlify deploy --prod"
   },
-  "keywords": [],
+  "keywords": ["github", "webhooks", "discord", "netlify", "serverless"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
-    "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "dotenv": "^17.2.1",
-    "env-var": "^7.5.0",
-    "express": "^5.1.0"
+    "@netlify/functions": "^4.2.1"
   }
 }
